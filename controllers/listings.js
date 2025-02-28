@@ -13,12 +13,17 @@ module.exports.renderNewForm = (req, res) => {
 };
 
 module.exports.createListing = async (req, res, next) => {
-	let response = await geocodingClient
+	try{
+		let response = await geocodingClient
 		.forwardGeocode({
 			query: `${req.body.listing.location},${req.body.listing.country}`,
 			limit: 1,
 		})
-		.send();
+		.send();}
+		catch(err){
+			console.log("error: ", err);
+		}
+		try{
 	let url = req.file.path;
 	let filename = req.file.filename;
 	const newListing = new Listing(req.body.listing);
@@ -28,6 +33,10 @@ module.exports.createListing = async (req, res, next) => {
 	await newListing.save();
 	req.flash("success", "New Listing Created!");
 	res.redirect("/listings");
+}catch(err){
+	console.log("err: ",err)
+}
+
 };
 
 module.exports.showListing = async (req, res, next) => {
