@@ -1,6 +1,6 @@
 const sampleListings = [
   {
-    title: "My Hostel",
+    title: "abc Hostel",
     description:
       "Experience a cozy and vibrant hostel with a welcoming atmosphere, modern amenities, and a perfect blend of comfort and community.",
     image: {
@@ -35,7 +35,7 @@ const sampleListings = [
     "Experience the charm of Flat in this beautifully restored House. Explore the rolling hills and vineyards.",
     image: {
       filename: "listingimage",
-      url: "https://plus.unsplash.com/premium_photo-1684175656320-5c3f701c082c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      url: "https://unsplash.com/photos/white-concrete-building-near-green-trees-during-daytime-n_crSnNw1no",
     },
     price: 3700000,
     location: "Noida",
@@ -107,7 +107,7 @@ const sampleListings = [
       "Experience a cozy and vibrant hostel with a welcoming atmosphere, modern amenities, and a perfect blend of comfort and community.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1593696140826-c58b021acf8b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      url: "https://images.unsplash.com/photo-1706341801850-18eb293a8017?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     price: 12000,
     location: "Bangalore",
@@ -359,7 +359,7 @@ const sampleListings = [
       "Experience a cozy and vibrant hostel with a welcoming atmosphere, modern amenities, and a perfect blend of comfort and community.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1612965607446-25e1332775ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      url: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZG9nfGVufDB8fDB8fHww",
     },
     price: 12000,
     location: "Bangalore",

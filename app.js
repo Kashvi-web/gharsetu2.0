@@ -44,6 +44,7 @@ app.listen(8080, () => {
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
+app.use("/uploads", express.static("public/uploads"));
 app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public/")));
@@ -107,6 +108,14 @@ app.use("/", userRouter);
 app.use("/profile", profileRouter);
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
+app.get("/area-converter", (req, res) => {
+	res.render("area-converter");
+  });
+  
+  app.get("/buy-vs-rent", (req, res) => {
+	res.render("buy-vs-rent");
+  });
+  
 app.all("*", (req, res, next) => {
 	next(new ExpressError(404, "Page Not Found!"));
 });

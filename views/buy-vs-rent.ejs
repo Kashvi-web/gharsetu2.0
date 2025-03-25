@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy vs Rent Calculator</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Buy vs Rent Calculator</h1>
+    <p>Use this calculator to decide if buying or renting makes financial sense.</p>
+    <form id="calculator-form">
+      <label for="location">Location</label>
+      <input type="text" id="location" placeholder="Enter location">
+
+      <h2>Buying</h2>
+      <label for="homePrice">Home Price</label>
+      <input type="number" id="homePrice" placeholder="Enter home price">
+      <label for="downPayment">Down Payment</label>
+      <input type="number" id="downPayment" placeholder="Enter down payment">
+
+      <h2>Renting</h2>
+      <label for="monthlyRent">Monthly Rent</label>
+      <input type="number" id="monthlyRent" placeholder="Enter monthly rent">
+      <label for="rentDuration">Rent Duration (years)</label>
+      <input type="number" id="rentDuration" placeholder="Enter duration">
+
+      <label for="netSalary">Net Salary</label>
+      <input type="number" id="netSalary" placeholder="Enter net salary">
+
+      <button type="button" id="calculate-btn">Calculate</button>
+
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

@@ -27,20 +27,12 @@ let categoryAll = [
 	"Amazing Pools",
 	"Farms",
 	"Amazing Views",
-	"Rooms",
 	"Lakefront",
-	"Tiny Homes",
-	"Countryside",
 	"Treehouse",
-	"Trending",
 	"Tropical",
 	"National Parks",
 	"Casties",
-	"Camping",
-	"Top Of The World",
 	"Luxe",
-	"Iconic Cities",
-	"Earth Homes",
 ];
 
 const initDB = async () => {

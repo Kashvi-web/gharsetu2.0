@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Converter</title>
+  <link rel="stylesheet" href="/css/arconvt.css">
+</head>
+<body>
+  <div class="converter-container">
+    <h2>Area Converter</h2>
+
+    <div class="form-group">
+      <label for="inputArea">Enter No. of Units</label>
+      <input type="number" id="inputArea" placeholder="Enter No. of Units">
+    </div>
+
+    <div class="form-group">
+      <label for="fromUnit">From</label>
+      <select id="fromUnit">
+        <option value="square_meter">Square Meter</option>
+        <option value="square_feet">Square Feet</option>
+        <option value="square_inch">Square Inch</option>
+        <option value="hectare">Hectare</option>
+        <option value="acre">Acre</option>
+        <option value="square_yard">Square Yard</option>
+        <option value="bigha">Bigha</option>
+        <option value="katha">Katha</option>
+        <option value="kanal">Kanal</option>
+        <option value="gaj">Gaj</option>
+        <option value="marla">Marla</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="toUnit">To</label>
+      <select id="toUnit">
+        <option value="square_meter">Square Meter</option>
+        <option value="square_feet">Square Feet</option>
+        <option value="square_inch">Square Inch</option>
+        <option value="hectare">Hectare</option>
+        <option value="acre">Acre</option>
+        <option value="square_yard">Square Yard</option>
+        <option value="bigha">Bigha</option>
+        <option value="katha">Katha</option>
+        <option value="kanal">Kanal</option>
+        <option value="gaj">Gaj</option>
+        <option value="marla">Marla</option>
+      </select>
+    </div>
+
+    <div class="conversion-btn">
+      <button onclick="convertArea()">Convert</button>
+    </div>
+
+    <div class="result-block" id="conversionResult">
+      Conversion result will appear here.
+    </div>
+  </div>
+
+  <script src="/js/arconvt.js"></script>
+</body>
+</html>
